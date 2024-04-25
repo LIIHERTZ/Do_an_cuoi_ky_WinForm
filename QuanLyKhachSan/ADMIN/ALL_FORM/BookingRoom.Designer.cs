@@ -195,8 +195,8 @@
             this.btn_XacNhan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_XacNhan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_XacNhan.FillColor = System.Drawing.Color.White;
-            this.btn_XacNhan.Font = new System.Drawing.Font("Segoe UI Semibold", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XacNhan.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_XacNhan.Font = new System.Drawing.Font("Segoe UI Black", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XacNhan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_XacNhan.Location = new System.Drawing.Point(579, 368);
             this.btn_XacNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_XacNhan.Name = "btn_XacNhan";

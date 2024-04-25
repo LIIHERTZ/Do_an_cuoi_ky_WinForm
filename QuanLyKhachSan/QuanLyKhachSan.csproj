@@ -75,7 +75,14 @@
     </Compile>
     <Compile Include="ADMIN\ALL_LAYER_DAO\AdminDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\BookingRoomDAO.cs" />
+    <Compile Include="ADMIN\ALL_LAYER_DAO\UC_BookedRoomsDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_RoomsDAO.cs" />
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.Designer.cs">
+      <DependentUpon>UC_BookedRooms.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Rooms.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\ALL_FORM\BookingRoom.resx">
       <DependentUpon>BookingRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.resx">
+      <DependentUpon>UC_BookedRooms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_Rooms.resx">
       <DependentUpon>UC_Rooms.cs</DependentUpon>

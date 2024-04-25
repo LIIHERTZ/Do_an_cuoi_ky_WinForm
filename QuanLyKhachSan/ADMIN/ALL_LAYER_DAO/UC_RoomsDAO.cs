@@ -14,14 +14,11 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
         public void Sua(string MaPhong)
         {
             var p = from k in db.Phongs where k.MaPhong.ToString() == MaPhong select k;
-            if (p.Any())
+            foreach (var j in p)
             {
-                foreach (var j in p)
-                {
-                    j.TinhTrang = "full";
-                }
-                db.SaveChanges();
+               j.TinhTrang = "full";
             }
+            db.SaveChanges();
         }
     }
 }

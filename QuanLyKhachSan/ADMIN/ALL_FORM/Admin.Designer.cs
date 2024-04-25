@@ -47,13 +47,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pic_Refresh = new System.Windows.Forms.PictureBox();
             this.pn_HienThi = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_Refresh = new System.Windows.Forms.Button();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelSlide.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEditinformation
@@ -76,7 +75,7 @@
             // 
             this.btn_LichSuGiaoDich.FlatAppearance.BorderSize = 0;
             this.btn_LichSuGiaoDich.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_LichSuGiaoDich.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LichSuGiaoDich.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_LichSuGiaoDich.ForeColor = System.Drawing.Color.White;
             this.btn_LichSuGiaoDich.Image = ((System.Drawing.Image)(resources.GetObject("btn_LichSuGiaoDich.Image")));
             this.btn_LichSuGiaoDich.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -92,7 +91,7 @@
             // 
             this.btn_DichVu.FlatAppearance.BorderSize = 0;
             this.btn_DichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DichVu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DichVu.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DichVu.ForeColor = System.Drawing.Color.White;
             this.btn_DichVu.Image = ((System.Drawing.Image)(resources.GetObject("btn_DichVu.Image")));
             this.btn_DichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,7 +176,7 @@
             // 
             this.btn_ThongTinKhachHang.FlatAppearance.BorderSize = 0;
             this.btn_ThongTinKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ThongTinKhachHang.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThongTinKhachHang.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThongTinKhachHang.ForeColor = System.Drawing.Color.White;
             this.btn_ThongTinKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThongTinKhachHang.Image")));
             this.btn_ThongTinKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,7 +192,7 @@
             // 
             this.btn_XemPhongDat.FlatAppearance.BorderSize = 0;
             this.btn_XemPhongDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XemPhongDat.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XemPhongDat.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XemPhongDat.ForeColor = System.Drawing.Color.White;
             this.btn_XemPhongDat.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemPhongDat.Image")));
             this.btn_XemPhongDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -204,12 +203,13 @@
             this.btn_XemPhongDat.Text = "     Phòng đã đặt";
             this.btn_XemPhongDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_XemPhongDat.UseVisualStyleBackColor = true;
+            this.btn_XemPhongDat.Click += new System.EventHandler(this.btn_XemPhongDat_Click);
             // 
             // btn_ThanhToan
             // 
             this.btn_ThanhToan.FlatAppearance.BorderSize = 0;
             this.btn_ThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ThanhToan.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThanhToan.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThanhToan.ForeColor = System.Drawing.Color.White;
             this.btn_ThanhToan.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThanhToan.Image")));
             this.btn_ThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -254,7 +254,7 @@
             // 
             this.btn_XemPhong.FlatAppearance.BorderSize = 0;
             this.btn_XemPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XemPhong.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XemPhong.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XemPhong.ForeColor = System.Drawing.Color.White;
             this.btn_XemPhong.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemPhong.Image")));
             this.btn_XemPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -290,7 +290,6 @@
             this.btn_Thoat.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Thoat.ForeColor = System.Drawing.Color.White;
             this.btn_Thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Thoat.Image")));
-            this.btn_Thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Thoat.Location = new System.Drawing.Point(1043, 3);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(32, 35);
@@ -302,24 +301,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel2.Controls.Add(this.pic_Refresh);
+            this.panel2.Controls.Add(this.btn_Refresh);
             this.panel2.Controls.Add(this.btn_Thoat);
             this.panel2.Location = new System.Drawing.Point(2, 5);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1098, 38);
             this.panel2.TabIndex = 25;
-            // 
-            // pic_Refresh
-            // 
-            this.pic_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("pic_Refresh.Image")));
-            this.pic_Refresh.Location = new System.Drawing.Point(994, 0);
-            this.pic_Refresh.Name = "pic_Refresh";
-            this.pic_Refresh.Size = new System.Drawing.Size(43, 38);
-            this.pic_Refresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_Refresh.TabIndex = 26;
-            this.pic_Refresh.TabStop = false;
-            this.pic_Refresh.Click += new System.EventHandler(this.pic_Refresh_Click);
             // 
             // pn_HienThi
             // 
@@ -328,6 +316,21 @@
             this.pn_HienThi.Name = "pn_HienThi";
             this.pn_HienThi.Size = new System.Drawing.Size(827, 551);
             this.pn_HienThi.TabIndex = 26;
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.FlatAppearance.BorderSize = 0;
+            this.btn_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Refresh.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Refresh.ForeColor = System.Drawing.Color.White;
+            this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
+            this.btn_Refresh.Location = new System.Drawing.Point(1005, 3);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(32, 35);
+            this.btn_Refresh.TabIndex = 27;
+            this.btn_Refresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // Admin
             // 
@@ -346,7 +349,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.PanelSlide.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -371,7 +373,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_Thoat;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pic_Refresh;
         private System.Windows.Forms.FlowLayoutPanel pn_HienThi;
+        private System.Windows.Forms.Button btn_Refresh;
     }
 }

@@ -75,6 +75,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             else
             {
                 booking.Them(a);
+                UC_RoomsDAO ucroom = new UC_RoomsDAO();
+                ucroom.Sua(txt_MaPhong.Text);
                 this.Close();
             }
         }

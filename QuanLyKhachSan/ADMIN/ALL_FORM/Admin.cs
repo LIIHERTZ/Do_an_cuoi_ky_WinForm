@@ -30,16 +30,23 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             if (traloi == DialogResult.Yes) Application.Exit();
         }
 
-        private void pic_Refresh_Click(object sender, EventArgs e)
-        {
-            pn_HienThi.Controls.Clear();
-        }
-
         private void btn_XemPhong_Click(object sender, EventArgs e)
         {
             pn_HienThi.Controls.Clear();
             admin = new AdminDAO();
             admin.loadAllUCRooms(pn_HienThi);
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            pn_HienThi.Controls.Clear();
+        }
+
+        private void btn_XemPhongDat_Click(object sender, EventArgs e)
+        {
+            pn_HienThi.Controls.Clear();
+            admin = new AdminDAO();
+            admin.loadAllUCBookedRooms(pn_HienThi);
         }
     }
 }

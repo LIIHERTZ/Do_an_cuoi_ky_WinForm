@@ -45,5 +45,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
             BookingRoom a = new BookingRoom (lbl_GiaTien.Text, lbl_MaLoaiPhong.Text);
             a.ShowDialog();
         }
+
+
     }
 }
