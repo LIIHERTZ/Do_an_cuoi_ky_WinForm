@@ -38,7 +38,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                     };
             foreach(var i in q)
             {
-                if (i.j.SoNguoi <= Convert.ToInt32(sl))
+                if (i.j.SoNguoi < Convert.ToInt32(sl))
                 {
                     kq = true;
                 }

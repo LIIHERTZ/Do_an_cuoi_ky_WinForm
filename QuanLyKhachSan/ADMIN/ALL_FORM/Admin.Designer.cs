@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
-            this.btnEditinformation = new System.Windows.Forms.Button();
+            this.btn_CheckIn = new System.Windows.Forms.Button();
             this.btn_LichSuGiaoDich = new System.Windows.Forms.Button();
             this.btn_DichVu = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -47,29 +47,29 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pn_HienThi = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_Refresh = new System.Windows.Forms.Button();
+            this.pn_HienThi = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PanelSlide.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnEditinformation
+            // btn_CheckIn
             // 
-            this.btnEditinformation.FlatAppearance.BorderSize = 0;
-            this.btnEditinformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditinformation.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditinformation.ForeColor = System.Drawing.Color.White;
-            this.btnEditinformation.Image = ((System.Drawing.Image)(resources.GetObject("btnEditinformation.Image")));
-            this.btnEditinformation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditinformation.Location = new System.Drawing.Point(15, 500);
-            this.btnEditinformation.Name = "btnEditinformation";
-            this.btnEditinformation.Size = new System.Drawing.Size(184, 54);
-            this.btnEditinformation.TabIndex = 17;
-            this.btnEditinformation.Text = "       Edit Information";
-            this.btnEditinformation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEditinformation.UseVisualStyleBackColor = true;
+            this.btn_CheckIn.FlatAppearance.BorderSize = 0;
+            this.btn_CheckIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CheckIn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CheckIn.ForeColor = System.Drawing.Color.White;
+            this.btn_CheckIn.Image = ((System.Drawing.Image)(resources.GetObject("btn_CheckIn.Image")));
+            this.btn_CheckIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_CheckIn.Location = new System.Drawing.Point(16, 148);
+            this.btn_CheckIn.Name = "btn_CheckIn";
+            this.btn_CheckIn.Size = new System.Drawing.Size(184, 54);
+            this.btn_CheckIn.TabIndex = 17;
+            this.btn_CheckIn.Text = "     Check In";
+            this.btn_CheckIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_CheckIn.UseVisualStyleBackColor = true;
             // 
             // btn_LichSuGiaoDich
             // 
@@ -79,7 +79,7 @@
             this.btn_LichSuGiaoDich.ForeColor = System.Drawing.Color.White;
             this.btn_LichSuGiaoDich.Image = ((System.Drawing.Image)(resources.GetObject("btn_LichSuGiaoDich.Image")));
             this.btn_LichSuGiaoDich.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_LichSuGiaoDich.Location = new System.Drawing.Point(15, 268);
+            this.btn_LichSuGiaoDich.Location = new System.Drawing.Point(16, 328);
             this.btn_LichSuGiaoDich.Name = "btn_LichSuGiaoDich";
             this.btn_LichSuGiaoDich.Size = new System.Drawing.Size(184, 54);
             this.btn_LichSuGiaoDich.TabIndex = 18;
@@ -95,7 +95,7 @@
             this.btn_DichVu.ForeColor = System.Drawing.Color.White;
             this.btn_DichVu.Image = ((System.Drawing.Image)(resources.GetObject("btn_DichVu.Image")));
             this.btn_DichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_DichVu.Location = new System.Drawing.Point(15, 382);
+            this.btn_DichVu.Location = new System.Drawing.Point(16, 448);
             this.btn_DichVu.Name = "btn_DichVu";
             this.btn_DichVu.Size = new System.Drawing.Size(184, 54);
             this.btn_DichVu.TabIndex = 11;
@@ -180,7 +180,7 @@
             this.btn_ThongTinKhachHang.ForeColor = System.Drawing.Color.White;
             this.btn_ThongTinKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThongTinKhachHang.Image")));
             this.btn_ThongTinKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ThongTinKhachHang.Location = new System.Drawing.Point(15, 322);
+            this.btn_ThongTinKhachHang.Location = new System.Drawing.Point(16, 388);
             this.btn_ThongTinKhachHang.Name = "btn_ThongTinKhachHang";
             this.btn_ThongTinKhachHang.Size = new System.Drawing.Size(184, 54);
             this.btn_ThongTinKhachHang.TabIndex = 15;
@@ -196,7 +196,7 @@
             this.btn_XemPhongDat.ForeColor = System.Drawing.Color.White;
             this.btn_XemPhongDat.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemPhongDat.Image")));
             this.btn_XemPhongDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_XemPhongDat.Location = new System.Drawing.Point(15, 148);
+            this.btn_XemPhongDat.Location = new System.Drawing.Point(16, 208);
             this.btn_XemPhongDat.Name = "btn_XemPhongDat";
             this.btn_XemPhongDat.Size = new System.Drawing.Size(184, 54);
             this.btn_XemPhongDat.TabIndex = 12;
@@ -213,7 +213,7 @@
             this.btn_ThanhToan.ForeColor = System.Drawing.Color.White;
             this.btn_ThanhToan.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThanhToan.Image")));
             this.btn_ThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ThanhToan.Location = new System.Drawing.Point(15, 208);
+            this.btn_ThanhToan.Location = new System.Drawing.Point(16, 268);
             this.btn_ThanhToan.Name = "btn_ThanhToan";
             this.btn_ThanhToan.Size = new System.Drawing.Size(184, 54);
             this.btn_ThanhToan.TabIndex = 13;
@@ -239,7 +239,7 @@
             this.PanelSlide.Controls.Add(this.btn_ThongTinKhachHang);
             this.PanelSlide.Controls.Add(this.SidePanel);
             this.PanelSlide.Controls.Add(this.btn_LichSuGiaoDich);
-            this.PanelSlide.Controls.Add(this.btnEditinformation);
+            this.PanelSlide.Controls.Add(this.btn_CheckIn);
             this.PanelSlide.Controls.Add(this.btn_DichVu);
             this.PanelSlide.Controls.Add(this.btn_XemPhongDat);
             this.PanelSlide.Controls.Add(this.btn_XemPhong);
@@ -258,7 +258,7 @@
             this.btn_XemPhong.ForeColor = System.Drawing.Color.White;
             this.btn_XemPhong.Image = ((System.Drawing.Image)(resources.GetObject("btn_XemPhong.Image")));
             this.btn_XemPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_XemPhong.Location = new System.Drawing.Point(15, 88);
+            this.btn_XemPhong.Location = new System.Drawing.Point(16, 88);
             this.btn_XemPhong.Name = "btn_XemPhong";
             this.btn_XemPhong.Size = new System.Drawing.Size(184, 54);
             this.btn_XemPhong.TabIndex = 14;
@@ -275,7 +275,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(15, 546);
+            this.button2.Location = new System.Drawing.Point(22, 545);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(184, 54);
             this.button2.TabIndex = 16;
@@ -309,14 +309,6 @@
             this.panel2.Size = new System.Drawing.Size(1098, 38);
             this.panel2.TabIndex = 25;
             // 
-            // pn_HienThi
-            // 
-            this.pn_HienThi.AutoScroll = true;
-            this.pn_HienThi.Location = new System.Drawing.Point(273, 77);
-            this.pn_HienThi.Name = "pn_HienThi";
-            this.pn_HienThi.Size = new System.Drawing.Size(827, 551);
-            this.pn_HienThi.TabIndex = 26;
-            // 
             // btn_Refresh
             // 
             this.btn_Refresh.FlatAppearance.BorderSize = 0;
@@ -331,6 +323,14 @@
             this.btn_Refresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Refresh.UseVisualStyleBackColor = true;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
+            // pn_HienThi
+            // 
+            this.pn_HienThi.AutoScroll = true;
+            this.pn_HienThi.Location = new System.Drawing.Point(273, 77);
+            this.pn_HienThi.Name = "pn_HienThi";
+            this.pn_HienThi.Size = new System.Drawing.Size(827, 551);
+            this.pn_HienThi.TabIndex = 26;
             // 
             // Admin
             // 
@@ -355,7 +355,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnEditinformation;
+        private System.Windows.Forms.Button btn_CheckIn;
         private System.Windows.Forms.Button btn_LichSuGiaoDich;
         private System.Windows.Forms.Button btn_DichVu;
         private System.Windows.Forms.Panel panel6;

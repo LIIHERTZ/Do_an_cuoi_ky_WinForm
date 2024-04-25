@@ -48,5 +48,6 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             admin = new AdminDAO();
             admin.loadAllUCBookedRooms(pn_HienThi);
         }
+
     }
 }
