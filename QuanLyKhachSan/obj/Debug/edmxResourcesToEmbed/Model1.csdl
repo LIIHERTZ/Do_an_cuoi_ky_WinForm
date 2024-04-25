@@ -22,7 +22,6 @@
     <NavigationProperty Name="KhachHang" Relationship="Self.FK__DatPhong__MaKH__440B1D61" FromRole="DatPhong" ToRole="KhachHang" />
     <NavigationProperty Name="Phong" Relationship="Self.FK__DatPhong__MaPhon__44FF419A" FromRole="DatPhong" ToRole="Phong" />
     <NavigationProperty Name="HoaDons" Relationship="Self.FK__HoaDon__MaDatPho__5070F446" FromRole="DatPhong" ToRole="HoaDon" />
-    <NavigationProperty Name="LichSuDatPhongs" Relationship="Self.FK__LichSuDat__MaDat__47DBAE45" FromRole="DatPhong" ToRole="LichSuDatPhong" />
   </EntityType>
   <EntityType Name="DichVu">
     <Key>
@@ -64,17 +63,6 @@
     <NavigationProperty Name="DangNhap" Relationship="Self.FK__KhachHang__TenDa__398D8EEE" FromRole="KhachHang" ToRole="DangNhap" />
     <NavigationProperty Name="DatPhongs" Relationship="Self.FK__DatPhong__MaKH__440B1D61" FromRole="KhachHang" ToRole="DatPhong" />
     <NavigationProperty Name="TongDichVus" Relationship="Self.FK__TongDichVu__MaKH__4CA06362" FromRole="KhachHang" ToRole="TongDichVu" />
-  </EntityType>
-  <EntityType Name="LichSuDatPhong">
-    <Key>
-      <PropertyRef Name="MaLichSu" />
-    </Key>
-    <Property Name="MaLichSu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="MaDatPhong" Type="Int32" />
-    <Property Name="NgayDat" Type="DateTime" Precision="3" />
-    <Property Name="NgayTraPhong" Type="DateTime" Precision="3" />
-    <Property Name="ThoiGianHuy" Type="DateTime" Precision="3" />
-    <NavigationProperty Name="DatPhong" Relationship="Self.FK__LichSuDat__MaDat__47DBAE45" FromRole="LichSuDatPhong" ToRole="DatPhong" />
   </EntityType>
   <EntityType Name="LoaiPhong">
     <Key>
@@ -191,18 +179,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__LichSuDat__MaDat__47DBAE45">
-    <End Role="DatPhong" Type="Self.DatPhong" Multiplicity="0..1" />
-    <End Role="LichSuDatPhong" Type="Self.LichSuDatPhong" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DatPhong">
-        <PropertyRef Name="MaDatPhong" />
-      </Principal>
-      <Dependent Role="LichSuDatPhong">
-        <PropertyRef Name="MaDatPhong" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__TongDichVu__MaDV__4D94879B">
     <End Role="DichVu" Type="Self.DichVu" Multiplicity="0..1" />
     <End Role="TongDichVu" Type="Self.TongDichVu" Multiplicity="*" />
@@ -257,7 +233,6 @@
     <EntitySet Name="DichVus" EntityType="Self.DichVu" />
     <EntitySet Name="HoaDons" EntityType="Self.HoaDon" />
     <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
-    <EntitySet Name="LichSuDatPhongs" EntityType="Self.LichSuDatPhong" />
     <EntitySet Name="LoaiPhongs" EntityType="Self.LoaiPhong" />
     <EntitySet Name="NhanViens" EntityType="Self.NhanVien" />
     <EntitySet Name="Phongs" EntityType="Self.Phong" />
@@ -282,10 +257,6 @@
     <AssociationSet Name="FK__HoaDon__MaDatPho__5070F446" Association="Self.FK__HoaDon__MaDatPho__5070F446">
       <End Role="DatPhong" EntitySet="DatPhongs" />
       <End Role="HoaDon" EntitySet="HoaDons" />
-    </AssociationSet>
-    <AssociationSet Name="FK__LichSuDat__MaDat__47DBAE45" Association="Self.FK__LichSuDat__MaDat__47DBAE45">
-      <End Role="DatPhong" EntitySet="DatPhongs" />
-      <End Role="LichSuDatPhong" EntitySet="LichSuDatPhongs" />
     </AssociationSet>
     <AssociationSet Name="FK__TongDichVu__MaDV__4D94879B" Association="Self.FK__TongDichVu__MaDV__4D94879B">
       <End Role="DichVu" EntitySet="DichVus" />

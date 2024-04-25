@@ -59,17 +59,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="LichSuDatPhongs">
-      <EntityTypeMapping TypeName="QuanLyKhachSanModel.LichSuDatPhong">
-        <MappingFragment StoreEntitySet="LichSuDatPhong">
-          <ScalarProperty Name="MaLichSu" ColumnName="MaLichSu" />
-          <ScalarProperty Name="MaDatPhong" ColumnName="MaDatPhong" />
-          <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
-          <ScalarProperty Name="NgayTraPhong" ColumnName="NgayTraPhong" />
-          <ScalarProperty Name="ThoiGianHuy" ColumnName="ThoiGianHuy" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="LoaiPhongs">
       <EntityTypeMapping TypeName="QuanLyKhachSanModel.LoaiPhong">
         <MappingFragment StoreEntitySet="LoaiPhong">

@@ -73,6 +73,7 @@
             this.btn_TraPhong.TabIndex = 68;
             this.btn_TraPhong.Text = "TRẢ PHÒNG";
             this.btn_TraPhong.UseVisualStyleBackColor = true;
+            this.btn_TraPhong.Click += new System.EventHandler(this.btn_TraPhong_Click);
             // 
             // lbl_TinhTrang
             // 

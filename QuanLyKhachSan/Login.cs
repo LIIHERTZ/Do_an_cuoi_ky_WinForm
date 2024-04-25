@@ -29,8 +29,8 @@ namespace QuanLyKhachSan
             if (login.check(a) == true)
             {
                 this.Hide();
-                Admin dashboard = new Admin(txt_TenDangNhap.Text);
-                dashboard.ShowDialog();
+                Admin admin = new Admin(txt_TenDangNhap.Text);
+                admin.ShowDialog();
             }
             else
             {

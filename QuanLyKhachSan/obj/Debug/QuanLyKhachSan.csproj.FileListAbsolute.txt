@@ -18,3 +18,5 @@ C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\Quan
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_FORM.BookingRoom.resources
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_USER_CONTROL.UC_Rooms.resources
 C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_USER_CONTROL.UC_BookedRooms.resources
+C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_USER_CONTROL.UC_Pay.resources
+C:\Users\Asus\Desktop\Data_Engineer\Lap_Trinh_Windows\DoAnWinForm_ChinhThuc\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.ADMIN.ALL_USER_CONTROL.UC_ReserveRooms.resources

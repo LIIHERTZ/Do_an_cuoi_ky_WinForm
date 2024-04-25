@@ -30,7 +30,6 @@ namespace QuanLyKhachSan
         public virtual DbSet<DichVu> DichVus { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
-        public virtual DbSet<LichSuDatPhong> LichSuDatPhongs { get; set; }
         public virtual DbSet<LoaiPhong> LoaiPhongs { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<Phong> Phongs { get; set; }

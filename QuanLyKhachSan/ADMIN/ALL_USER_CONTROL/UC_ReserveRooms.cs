@@ -12,16 +12,16 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
 {
-    public partial class UC_BookedRooms : UserControl
+    public partial class UC_ReserveRooms : UserControl
     {
         string tendnNV;
-        UC_BookedRoomsDAO booked = new UC_BookedRoomsDAO();
-        public UC_BookedRooms()
+        UC_ReseverRoomsDAO booked = new UC_ReseverRoomsDAO();
+        public UC_ReserveRooms()
         {
             InitializeComponent();
         }
         string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
-        public UC_BookedRooms(Phong a,LoaiPhong b, DatPhong c,string s)
+        public UC_ReserveRooms(Phong a, LoaiPhong b, DatPhong c, string s)
         {
             InitializeComponent();
             tendnNV = s;
@@ -37,25 +37,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
             lbl_ThoiGianDat.Text = time.Substring(10, 10);
             string image = Path.Combine(appDirectory, b.Anh);
             pic_Anh.Image = Image.FromFile(image);
-            
-        }
 
-        private void btn_TraPhong_Click(object sender, EventArgs e)
-        {
-            DialogResult traloi;
-            traloi = (MessageBox.Show("Bạn có chắc sẽ trả phòng?", "Chú ý", MessageBoxButtons.YesNo, MessageBoxIcon.Warning));
-            if (traloi == DialogResult.Yes)
-            {
-                booked = new UC_BookedRoomsDAO();
-                DateTime time = DateTime.Now;
-                HoaDon a = new HoaDon();
-                a.MaDatPhong = Convert.ToInt32(lbl_MaDatPhong.Text);
-                a.NgayLap = time;
-                a.NhanVienThanhToan = booked.layMaNhanVien(tendnNV);
-                a.TinhTrang = "wait";
-                booked.ThemHoaDon(a);
-                booked.Sua(lbl_MaPhong.Text);
-            }
         }
     }
 }

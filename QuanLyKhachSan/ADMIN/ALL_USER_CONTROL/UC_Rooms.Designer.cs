@@ -263,7 +263,7 @@
             // 
             // pn_TinhTrang
             // 
-            this.pn_TinhTrang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pn_TinhTrang.BackColor = System.Drawing.Color.Green;
             this.pn_TinhTrang.Location = new System.Drawing.Point(207, 135);
             this.pn_TinhTrang.Name = "pn_TinhTrang";
             this.pn_TinhTrang.Size = new System.Drawing.Size(489, 18);

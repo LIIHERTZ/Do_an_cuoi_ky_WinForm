@@ -58,16 +58,6 @@
           <Property Name="GioiTinh" Type="nvarchar" MaxLength="50" />
           <Property Name="Anh" Type="nvarchar(max)" />
         </EntityType>
-        <EntityType Name="LichSuDatPhong">
-          <Key>
-            <PropertyRef Name="MaLichSu" />
-          </Key>
-          <Property Name="MaLichSu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="MaDatPhong" Type="int" />
-          <Property Name="NgayDat" Type="datetime" />
-          <Property Name="NgayTraPhong" Type="datetime" />
-          <Property Name="ThoiGianHuy" Type="datetime" />
-        </EntityType>
         <EntityType Name="LoaiPhong">
           <Key>
             <PropertyRef Name="MaLoaiPhong" />
@@ -176,18 +166,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LichSuDat__MaDat__47DBAE45">
-          <End Role="DatPhong" Type="Self.DatPhong" Multiplicity="0..1" />
-          <End Role="LichSuDatPhong" Type="Self.LichSuDatPhong" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="DatPhong">
-              <PropertyRef Name="MaDatPhong" />
-            </Principal>
-            <Dependent Role="LichSuDatPhong">
-              <PropertyRef Name="MaDatPhong" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__NhanVien__TenDan__412EB0B6">
           <End Role="DangNhap" Type="Self.DangNhap" Multiplicity="0..1" />
           <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="*" />
@@ -242,7 +220,6 @@
           <EntitySet Name="DichVu" EntityType="Self.DichVu" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HoaDon" EntityType="Self.HoaDon" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="KhachHang" EntityType="Self.KhachHang" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="LichSuDatPhong" EntityType="Self.LichSuDatPhong" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LoaiPhong" EntityType="Self.LoaiPhong" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Phong" EntityType="Self.Phong" Schema="dbo" store:Type="Tables" />
@@ -267,10 +244,6 @@
           <AssociationSet Name="FK__KhachHang__TenDa__398D8EEE" Association="Self.FK__KhachHang__TenDa__398D8EEE">
             <End Role="DangNhap" EntitySet="DangNhap" />
             <End Role="KhachHang" EntitySet="KhachHang" />
-          </AssociationSet>
-          <AssociationSet Name="FK__LichSuDat__MaDat__47DBAE45" Association="Self.FK__LichSuDat__MaDat__47DBAE45">
-            <End Role="DatPhong" EntitySet="DatPhong" />
-            <End Role="LichSuDatPhong" EntitySet="LichSuDatPhong" />
           </AssociationSet>
           <AssociationSet Name="FK__NhanVien__TenDan__412EB0B6" Association="Self.FK__NhanVien__TenDan__412EB0B6">
             <End Role="DangNhap" EntitySet="DangNhap" />
@@ -316,7 +289,6 @@
           <NavigationProperty Name="KhachHang" Relationship="Self.FK__DatPhong__MaKH__440B1D61" FromRole="DatPhong" ToRole="KhachHang" />
           <NavigationProperty Name="Phong" Relationship="Self.FK__DatPhong__MaPhon__44FF419A" FromRole="DatPhong" ToRole="Phong" />
           <NavigationProperty Name="HoaDons" Relationship="Self.FK__HoaDon__MaDatPho__5070F446" FromRole="DatPhong" ToRole="HoaDon" />
-          <NavigationProperty Name="LichSuDatPhongs" Relationship="Self.FK__LichSuDat__MaDat__47DBAE45" FromRole="DatPhong" ToRole="LichSuDatPhong" />
         </EntityType>
         <EntityType Name="DichVu">
           <Key>
@@ -358,17 +330,6 @@
           <NavigationProperty Name="DangNhap" Relationship="Self.FK__KhachHang__TenDa__398D8EEE" FromRole="KhachHang" ToRole="DangNhap" />
           <NavigationProperty Name="DatPhongs" Relationship="Self.FK__DatPhong__MaKH__440B1D61" FromRole="KhachHang" ToRole="DatPhong" />
           <NavigationProperty Name="TongDichVus" Relationship="Self.FK__TongDichVu__MaKH__4CA06362" FromRole="KhachHang" ToRole="TongDichVu" />
-        </EntityType>
-        <EntityType Name="LichSuDatPhong">
-          <Key>
-            <PropertyRef Name="MaLichSu" />
-          </Key>
-          <Property Name="MaLichSu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="MaDatPhong" Type="Int32" />
-          <Property Name="NgayDat" Type="DateTime" Precision="3" />
-          <Property Name="NgayTraPhong" Type="DateTime" Precision="3" />
-          <Property Name="ThoiGianHuy" Type="DateTime" Precision="3" />
-          <NavigationProperty Name="DatPhong" Relationship="Self.FK__LichSuDat__MaDat__47DBAE45" FromRole="LichSuDatPhong" ToRole="DatPhong" />
         </EntityType>
         <EntityType Name="LoaiPhong">
           <Key>
@@ -485,18 +446,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LichSuDat__MaDat__47DBAE45">
-          <End Role="DatPhong" Type="Self.DatPhong" Multiplicity="0..1" />
-          <End Role="LichSuDatPhong" Type="Self.LichSuDatPhong" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="DatPhong">
-              <PropertyRef Name="MaDatPhong" />
-            </Principal>
-            <Dependent Role="LichSuDatPhong">
-              <PropertyRef Name="MaDatPhong" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__TongDichVu__MaDV__4D94879B">
           <End Role="DichVu" Type="Self.DichVu" Multiplicity="0..1" />
           <End Role="TongDichVu" Type="Self.TongDichVu" Multiplicity="*" />
@@ -551,7 +500,6 @@
           <EntitySet Name="DichVus" EntityType="Self.DichVu" />
           <EntitySet Name="HoaDons" EntityType="Self.HoaDon" />
           <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
-          <EntitySet Name="LichSuDatPhongs" EntityType="Self.LichSuDatPhong" />
           <EntitySet Name="LoaiPhongs" EntityType="Self.LoaiPhong" />
           <EntitySet Name="NhanViens" EntityType="Self.NhanVien" />
           <EntitySet Name="Phongs" EntityType="Self.Phong" />
@@ -576,10 +524,6 @@
           <AssociationSet Name="FK__HoaDon__MaDatPho__5070F446" Association="Self.FK__HoaDon__MaDatPho__5070F446">
             <End Role="DatPhong" EntitySet="DatPhongs" />
             <End Role="HoaDon" EntitySet="HoaDons" />
-          </AssociationSet>
-          <AssociationSet Name="FK__LichSuDat__MaDat__47DBAE45" Association="Self.FK__LichSuDat__MaDat__47DBAE45">
-            <End Role="DatPhong" EntitySet="DatPhongs" />
-            <End Role="LichSuDatPhong" EntitySet="LichSuDatPhongs" />
           </AssociationSet>
           <AssociationSet Name="FK__TongDichVu__MaDV__4D94879B" Association="Self.FK__TongDichVu__MaDV__4D94879B">
             <End Role="DichVu" EntitySet="DichVus" />
@@ -659,17 +603,6 @@
                 <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
                 <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
                 <ScalarProperty Name="Anh" ColumnName="Anh" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="LichSuDatPhongs">
-            <EntityTypeMapping TypeName="QuanLyKhachSanModel.LichSuDatPhong">
-              <MappingFragment StoreEntitySet="LichSuDatPhong">
-                <ScalarProperty Name="MaLichSu" ColumnName="MaLichSu" />
-                <ScalarProperty Name="MaDatPhong" ColumnName="MaDatPhong" />
-                <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
-                <ScalarProperty Name="NgayTraPhong" ColumnName="NgayTraPhong" />
-                <ScalarProperty Name="ThoiGianHuy" ColumnName="ThoiGianHuy" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

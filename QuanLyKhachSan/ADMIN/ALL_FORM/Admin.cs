@@ -1,4 +1,5 @@
 ﻿using QuanLyKhachSan.ADMIN.ALL_LAYER_DAO;
+using QuanLyKhachSan.ADMIN.ALL_USER_CONTROL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
     public partial class Admin : Form
     {
         AdminDAO admin = new AdminDAO();
+        string tendnNV;
         public Admin()
         {
             InitializeComponent();
@@ -21,6 +23,8 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
         public Admin(string s)
         {
             InitializeComponent();
+            tendnNV = s;
+
         }
 
         private void btn_Thoat_Click(object sender, EventArgs e)
@@ -46,7 +50,21 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
         {
             pn_HienThi.Controls.Clear();
             admin = new AdminDAO();
-            admin.loadAllUCBookedRooms(pn_HienThi);
+            admin.loadAllUCBookedRooms(pn_HienThi,tendnNV);
+        }
+
+        private void btn_ThanhToan_Click(object sender, EventArgs e)
+        {
+            pn_HienThi.Controls.Clear();
+            admin = new AdminDAO();
+            admin.loadThanhToan(pn_HienThi);
+        }
+
+        private void btn_CheckIn_Click(object sender, EventArgs e)
+        {
+            pn_HienThi.Controls.Clear();
+            admin = new AdminDAO();
+            admin.loadAllUCReserveRooms(pn_HienThi, tendnNV);
         }
 
     }

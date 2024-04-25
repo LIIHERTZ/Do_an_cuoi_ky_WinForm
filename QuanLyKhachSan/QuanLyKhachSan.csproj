@@ -75,13 +75,27 @@
     </Compile>
     <Compile Include="ADMIN\ALL_LAYER_DAO\AdminDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\BookingRoomDAO.cs" />
+    <Compile Include="ADMIN\ALL_LAYER_DAO\UC_ReseverRoomsDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_BookedRoomsDAO.cs" />
+    <Compile Include="ADMIN\ALL_LAYER_DAO\UC_PayDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_RoomsDAO.cs" />
     <Compile Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.Designer.cs">
       <DependentUpon>UC_BookedRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Pay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Pay.Designer.cs">
+      <DependentUpon>UC_Pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_ReserveRooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_ReserveRooms.Designer.cs">
+      <DependentUpon>UC_ReserveRooms.cs</DependentUpon>
     </Compile>
     <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Rooms.cs">
       <SubType>UserControl</SubType>
@@ -102,9 +116,6 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="KhachHang.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LichSuDatPhong.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="LoaiPhong.cs">
@@ -155,6 +166,12 @@
     <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.resx">
       <DependentUpon>UC_BookedRooms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_Pay.resx">
+      <DependentUpon>UC_Pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_ReserveRooms.resx">
+      <DependentUpon>UC_ReserveRooms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_Rooms.resx">
       <DependentUpon>UC_Rooms.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,10 +209,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -203,9 +223,5 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

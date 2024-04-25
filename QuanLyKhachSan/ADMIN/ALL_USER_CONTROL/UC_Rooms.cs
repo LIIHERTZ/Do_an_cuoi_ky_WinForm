@@ -38,6 +38,11 @@ namespace QuanLyKhachSan.ADMIN.ALL_USER_CONTROL
                 pn_TinhTrang.BackColor = Color.Red;
                 btn_DatPhong.Enabled = false;
             }
+            else if (lbl_TinhTrang.Text.Contains("wait"))
+            {
+                pn_TinhTrang.BackColor = Color.Yellow;
+                btn_DatPhong.Enabled = false;
+            }
         }
 
         private void btn_DatPhong_Click(object sender, EventArgs e)

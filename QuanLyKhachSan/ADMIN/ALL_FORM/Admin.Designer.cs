@@ -70,6 +70,7 @@
             this.btn_CheckIn.Text = "     Check In";
             this.btn_CheckIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_CheckIn.UseVisualStyleBackColor = true;
+            this.btn_CheckIn.Click += new System.EventHandler(this.btn_CheckIn_Click);
             // 
             // btn_LichSuGiaoDich
             // 
@@ -220,6 +221,7 @@
             this.btn_ThanhToan.Text = "     Thanh toán";
             this.btn_ThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_ThanhToan.UseVisualStyleBackColor = true;
+            this.btn_ThanhToan.Click += new System.EventHandler(this.btn_ThanhToan_Click);
             // 
             // pictureBox2
             // 
