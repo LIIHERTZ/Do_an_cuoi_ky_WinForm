@@ -73,8 +73,15 @@
     <Compile Include="ADMIN\ALL_FORM\BookingRoom.Designer.cs">
       <DependentUpon>BookingRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADMIN\ALL_FORM\Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ALL_FORM\Service.Designer.cs">
+      <DependentUpon>Service.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADMIN\ALL_LAYER_DAO\AdminDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\BookingRoomDAO.cs" />
+    <Compile Include="ADMIN\ALL_LAYER_DAO\ServiceDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_ReseverRoomsDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_BookedRoomsDAO.cs" />
     <Compile Include="ADMIN\ALL_LAYER_DAO\UC_PayDAO.cs" />
@@ -102,6 +109,12 @@
     </Compile>
     <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Rooms.Designer.cs">
       <DependentUpon>UC_Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Services.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ALL_USER_CONTROL\UC_Services.Designer.cs">
+      <DependentUpon>UC_Services.cs</DependentUpon>
     </Compile>
     <Compile Include="DangNhap.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -163,6 +176,9 @@
     <EmbeddedResource Include="ADMIN\ALL_FORM\BookingRoom.resx">
       <DependentUpon>BookingRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\ALL_FORM\Service.resx">
+      <DependentUpon>Service.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_BookedRooms.resx">
       <DependentUpon>UC_BookedRooms.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_Rooms.resx">
       <DependentUpon>UC_Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\ALL_USER_CONTROL\UC_Services.resx">
+      <DependentUpon>UC_Services.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

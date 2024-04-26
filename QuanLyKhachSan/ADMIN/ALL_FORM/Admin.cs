@@ -67,5 +67,11 @@ namespace QuanLyKhachSan.ADMIN.ALL_FORM
             admin.loadAllUCReserveRooms(pn_HienThi, tendnNV);
         }
 
+        private void btn_DichVu_Click(object sender, EventArgs e)
+        {
+            pn_HienThi.Controls.Clear();
+            admin = new AdminDAO();
+            admin.loadAllUCServices(pn_HienThi);
+        }
     }
 }

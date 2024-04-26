@@ -114,5 +114,14 @@ namespace QuanLyKhachSan.ADMIN.ALL_LAYER_DAO
                 f.Controls.Add(d);
             }
         }
+        public void loadAllUCServices(FlowLayoutPanel f)
+        {
+            var p = from k in db.DichVus select k;
+            foreach (var k in p)
+            {
+                UC_Services a = new UC_Services(k);
+                f.Controls.Add(a);
+            }
+        }
     }
 }
